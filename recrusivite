@@ -1,0 +1,27 @@
+function recrusicite(mot) {
+   
+    mot = mot.toLowerCase();
+
+  
+    let debut = 0;
+    let fin = mot.length - 1;
+
+    
+    while (debut < fin) {
+        
+        if (mot[debut] !== mot[fin]) {
+            return false;
+        }
+
+       
+        debut++;
+        fin--;
+    }
+
+   
+    return true;
+}
+
+// Exemples recrusivite
+let mot1 = "radar";
+let mot2 = "python";
